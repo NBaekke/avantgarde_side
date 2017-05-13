@@ -1,14 +1,14 @@
-var myIndex = 0;
-carousel();
+var mySlider = 0;
+photoSlider();
 
-function carousel() {
+function photoSlider() {
     var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+    var photos = document.getElementsByClassName("mySlides");
+    for (i = 0; i < photos.length; i++) {
+       photos[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1;}
-    x[myIndex-1].style.display = "inline";
-    setTimeout(carousel, 5000); // Change image every 2 seconds
+    mySlider++;
+    if (mySlider > photos.length) {mySlider = 1;}
+    photos[mySlider-1].style.display = "inline";
+    setTimeout(photoSlider, 5000);
 }
