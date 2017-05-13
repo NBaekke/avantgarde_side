@@ -9,6 +9,6 @@ function photoSlider() {
     }
     mySlider++;
     if (mySlider > photos.length) {mySlider = 1;}
-    photos[mySlider-1].style.display = "inline";
+    photos[mySlider-1].style.display = "block";
     setTimeout(photoSlider, 5000);
 }
