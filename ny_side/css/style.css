@@ -158,6 +158,7 @@ li:hover {
 .forside_venstre {
 	width: 600px;
 	height: 100%;
+	float: left;
 }
 
 /* Overskriften - font, størrelse? */
@@ -180,97 +181,97 @@ a.inden_fullscreen img {
 }
 
 .efter_fullscreen {
-position: fixed;
-top: -100%;
-width: 100%;
-background: rgba(0,0,0,.7);
-width: 100%;
-opacity: 0;
--webkit-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--o-transition: opacity .5s ease-in-out;
-transition: opacity .5s ease-in-out;
-overflow: hidden;
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	overflow: hidden;
 }
 
 .efter_fullscreen img {
-margin: auto;
-position: absolute;
-top: 0;
-left:0;
-right:0;
-bottom: 0;
-max-height: 0%;
-max-width: 0%;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-box-sizing: border-box;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom: 0;
+	max-height: 0%;
+	max-width: 0%;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+	box-sizing: border-box;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 
-}
+	}
 
-a.efter_close {
-display: block;
-width:50px;
-height:50px;
-box-sizing: border-box;
-background: #ffffff;
-color: #000000;
-text-decoration: none;
-position: absolute;
-top: -80px;
-right: 0;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
+	a.efter_close {
+	display: block;
+	width:50px;
+	height:50px;
+	box-sizing: border-box;
+	background: #ffffff;
+	color: #000000;
+	text-decoration: none;
+	position: absolute;
+	top: -80px;
+	right: 0;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 a.efter_close:before {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: #000000;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(45deg);
--moz-transform:rotate(45deg);
--o-transform:rotate(45deg);
-transform:rotate(45deg);
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: #000000;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
 }
 
 a.efter_close:after {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: #000000;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(-45deg);
--moz-transform:rotate(-45deg);
--o-transform:rotate(-45deg);
-transform:rotate(-45deg);
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: #000000;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
 }
 
 .efter_fullscreen:target {
-opacity: 1;
-top: 0;
-bottom: 0;
+	opacity: 1;
+	top: 0;
+	bottom: 0;
 }
 
 .efter_fullscreen:target img {
-max-height: 100%;
-max-width: 100%;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 .efter_fullscreen:target a.efter_close {
-top: 0px;
+	top: 0px;
 }
 
 /* Textbox - paragraph */
@@ -292,4 +293,16 @@ strong {
 	height: 300px;
 	margin: auto;
 	display: block;
+}
+
+.forside_højre {
+	float: right;
+	width: 400px;
+	height: 100%;
+}
+
+#aabningstider {
+	padding-top: 75px;
+	display: block;
+	margin: 0 auto;
 }
