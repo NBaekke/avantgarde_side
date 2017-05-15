@@ -96,7 +96,7 @@ header {
   background: linear-gradient(rgba(54, 54, 54, 0.7), rgb(54, 54, 54));
 }
 
-ul li {
+.menu_bar ul li {
   list-style: none;
   float: left;
   width: 16.58%;
@@ -104,13 +104,13 @@ ul li {
 	padding: 0px;
 }
 
-ul {
+.menu_bar ul {
   z-index: 99;
 	-webkit-padding-start: 0px;
 	height: 100%;
 }
 
-ul a {
+.menu_bar ul a {
 	color: #efefef;
 	font: 17px "avenir", sans-serif;
 	text-decoration: none;
@@ -118,14 +118,14 @@ ul a {
 	letter-spacing: -0.5px;
 }
 
-ul a:hover {
+.menu_bar ul a:hover {
 }
 
-li {
+.menu_bar li {
 	padding: 0px;
 }
 
-li a {
+.menu_bar li a {
 	margin: 0px;
 	display: block;
 	width: 100%;
@@ -134,7 +134,7 @@ li a {
 	text-align: center;
 }
 
-li:hover {
+.menu_bar li:hover {
 	background-color: rgb(36, 36, 36);
 }
 
@@ -317,14 +317,44 @@ strong {
 	display: block;
 }
 
-.forside_højre {
+.forside_hojre {
 	float: right;
 	width: 400px;
 	height: 100%;
 }
 
+/* Åbningstider - justering? */
 #aabningstider {
 	padding-top: 75px;
 	display: block;
 	margin: 0 auto;
+}
+
+/* Footer */
+footer {
+	width: 1000px;
+	height: 20px;
+	margin: 0 auto;
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+
+.footer_venstre {
+	width: 500px;
+	height: 20px;
+	background: #363636;
+}
+
+.footer_venstre ul li {
+  list-style: none;
+  float: left;
+  width: 50%;
+	padding: 0px;
+	text-align: center;
+	font: 14px Arial sans-serif;
+}
+
+#footer_adresse {
+	text-align: left;
 }
