@@ -4,6 +4,7 @@
 	src: url(http://www.a-hs.dk/AvenirLTStd-Light.otf) format("OpenType");
 }
 
+/* Brug op alle sider */
 body {
   width: 100%;
   background-color: #363636;
@@ -135,7 +136,7 @@ header {
 }
 
 .menu_bar li:hover {
-	background-color: rgb(36, 36, 36);
+	background-color: #242424;
 }
 
 #spacer {
@@ -148,7 +149,35 @@ header {
 	padding: 0px;
 	width: 1px;
 }
-/* Header CSS slut */
+
+/* Footer */
+footer {
+	width: 1000px;
+	height: 20px;
+	margin: 0 auto;
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+
+.footer_venstre {
+	width: 500px;
+	height: 20px;
+	background: #363636;
+}
+
+.footer_venstre ul li {
+  list-style: none;
+  float: left;
+  width: 50%;
+	padding: 0px;
+	text-align: center;
+	font: 14px Arial sans-serif;
+}
+
+#footer_adresse {
+	text-align: left;
+}
 
 /* Section del - Separate side CSS */
 .side_controller {
@@ -165,12 +194,21 @@ header {
 	background-color: #ffffff;
 }
 
+.side_controller_omos {
+	margin: 0 auto;
+	width: 1000px;
+	height: 1200px;
+	background-color: #ffffff;
+}
+
 .forside_venstre {
 	width: 600px;
 	height: 100%;
 	float: left;
 }
+/* Slut på alle sider */
 
+/* FORSIDE */
 /* Overskriften - font, størrelse? */
 #overskrift_forside h1 {
 	font: 19px Arial, sans-serif;
@@ -329,32 +367,83 @@ strong {
 	display: block;
 	margin: 0 auto;
 }
+/* FORSIDE SLUT */
 
-/* Footer */
-footer {
-	width: 1000px;
-	height: 20px;
-	margin: 0 auto;
-	position: relative;
-	left: 0;
-	bottom: 0;
+/* BESTIL TID */
+
+/* BESTIL TID SLUT */
+
+/* GALLERI */
+
+/* GALLERI SLUT */
+
+/* PRODUKTER */
+
+/* PRODUKTER SLUT */
+
+/* OM OS */
+.text_omos_venstre {
+	font-family: 'avenir', sans-serif;
+	width: 580px;
+	padding-left: 20px;
+	padding-top: 20px;
+	float: left;
 }
 
-.footer_venstre {
-	width: 500px;
-	height: 20px;
-	background: #363636;
+.text_omos_venstre h1 {
+	font-size: 20px;
 }
 
-.footer_venstre ul li {
-  list-style: none;
-  float: left;
-  width: 50%;
-	padding: 0px;
-	text-align: center;
-	font: 14px Arial sans-serif;
+.text_omos_venstre h2 {
+	font-size: 17px;
 }
 
-#footer_adresse {
-	text-align: left;
+.text_omos_venstre p {
+	font-size: 15px;
 }
+
+#omos_overskrift_2 h1 {
+	margin-top: 50px;
+}
+
+.omos_billeder {
+	float: right;
+	width: 400px;
+	margin: 0;
+}
+
+.omos_billeder img {
+	width: 215px;
+}
+
+/* OM OS SLUT */
+
+/* KONTAKT */
+.info_kontakt h1, .info_kontakt2 h1 {
+	font: 20px 'avenir', sans-serif;
+	padding: 30px 0px 0px 30px;
+	margin: 0;
+	font-weight: bold;
+}
+
+.info_kontakt p, .info_kontakt2 p {
+	font: 16px 'avenir', sans-serif;
+	padding: 5px 0px 40px 30px;
+	margin: 0;
+}
+
+.info_kontakt2 {
+	margin-left: 40px;
+	float: left;
+}
+
+.info_kontakt {
+	float: left;
+}
+
+#google_map {
+
+}
+
+
+/* KONTAKT SLUT */
