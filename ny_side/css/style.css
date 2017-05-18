@@ -5,7 +5,8 @@
 }
 
 /* Brug op alle sider */
-body {
+body, html {
+	height: 100%;
   width: 100%;
   background-color: #363636;
   margin: 0;
@@ -91,10 +92,10 @@ header {
   margin-top: -66px;
   position: relative;
   background: #363636;
-	background: -webkit-linear-gradient(rgba(54, 54, 54, 0.7), rgb(54, 54, 54));
-  background: -o-linear-gradient(rgba(54, 54, 54, 0.7), rgb(54, 54, 54));
-  background: -moz-linear-gradient(rgba(54, 54, 54, 0,7), rgb(54, 54, 54));
-  background: linear-gradient(rgba(54, 54, 54, 0.7), rgb(54, 54, 54));
+	background: -webkit-linear-gradient(rgba(54, 54, 54, 0.75), rgb(54, 54, 54));
+  background: -o-linear-gradient(rgba(54, 54, 54, 0.75), rgb(54, 54, 54));
+  background: -moz-linear-gradient(rgba(54, 54, 54, 0.75), rgb(54, 54, 54));
+  background: linear-gradient(rgba(54, 54, 54, 0.75), rgb(54, 54, 54));
 }
 
 .menu_bar ul li {
@@ -152,53 +153,71 @@ header {
 
 /* Footer */
 footer {
-	width: 1000px;
-	height: 20px;
-	margin: 0 auto;
+	width: 100%;
+	height: 40px;
 	position: relative;
 	left: 0;
 	bottom: 0;
 }
 
-.footer_venstre {
+.footer_controller {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.footer_venstre, .footer_hojre {
 	width: 500px;
-	height: 20px;
-	background: #363636;
+	height: 40px;
+	float: left;
 }
 
-.footer_venstre ul li {
-  list-style: none;
+.footer_venstre p {
   float: left;
-  width: 50%;
+	margin-left: 5px;
 	padding: 0px;
-	text-align: center;
-	font: 14px Arial sans-serif;
+	font: 13px "avenir", sans-serif;
+	color: #efefef;
 }
 
-#footer_adresse {
-	text-align: left;
+#footer_text span {
+	padding: 0px 2px;
 }
 
+.footer_hojre i, .footer_hojre p {
+	float: right;
+	padding: 0px;
+	color: #efefef;
+}
+
+.footer_hojre p {
+	font: 13px "avenir", sans-serif;
+	margin-right: 5px;
+	margin-top: 13px;
+}
+
+.footer_hojre i {
+	margin-right: 5px;
+	margin-top: 11px;
+}
 /* Section del - Separate side CSS */
-.side_controller {
+
+.side_controller, .side_controller_omos, .side_controller_bestil{
 	margin: 0 auto;
 	width: 1000px;
-	height: 1050px;
 	background-color: #ffffff;
+}
+
+.side_controller, .side_controller_omos, .side_controller_bestil {
+	height: 1050px;
 }
 
 .side_controller_bestil {
-	margin: 0 auto;
-	width: 1000px;
 	height: 700px;
-	background-color: #ffffff;
 }
 
 .side_controller_omos {
-	margin: 0 auto;
-	width: 1000px;
 	height: 1200px;
-	background-color: #ffffff;
 }
 
 .forside_venstre {
@@ -211,7 +230,7 @@ footer {
 /* FORSIDE */
 /* Overskriften - font, størrelse? */
 #overskrift_forside h1 {
-	font: 19px Arial, sans-serif;
+	font: 19px "avenir", sans-serif;
 	font-weight: bold;
 	color: rgb(38, 38, 38);
 	margin: 0px;
@@ -221,7 +240,7 @@ footer {
 
 #overskrift_forside h2 {
 	margin-top: 0px;
-	font: 18px Arial, sans-serif;
+	font: 18px "avenir", sans-serif;
 	text-align: center;
 	font-style: italic;
 }
@@ -339,7 +358,7 @@ a.efter_close:after {
 	padding: 0 40px;
 	text-align: -webkit-center;
 	font-size: 15px;
-	font-family: 'Arial', sans-serif;
+	font-family: "avenir", sans-serif;
 }
 
 strong {
@@ -383,7 +402,7 @@ strong {
 
 /* OM OS */
 .text_omos_venstre {
-	font-family: 'avenir', sans-serif;
+	font-family: "avenir", sans-serif;
 	width: 580px;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -420,14 +439,14 @@ strong {
 
 /* KONTAKT */
 .info_kontakt h1, .info_kontakt2 h1 {
-	font: 20px 'avenir', sans-serif;
+	font: 20px "avenir", sans-serif;
 	padding: 30px 0px 0px 30px;
 	margin: 0;
 	font-weight: bold;
 }
 
 .info_kontakt p, .info_kontakt2 p {
-	font: 16px 'avenir', sans-serif;
+	font: 16px "avenir", sans-serif;
 	padding: 5px 0px 40px 30px;
 	margin: 0;
 }
