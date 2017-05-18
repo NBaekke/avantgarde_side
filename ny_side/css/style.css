@@ -4,7 +4,7 @@
 	src: url(http://www.a-hs.dk/AvenirLTStd-Light.otf) format("OpenType");
 }
 
-/* Brug op alle sider */
+/* Alle sider body og html */
 body, html {
 	height: 100%;
   width: 100%;
@@ -13,7 +13,7 @@ body, html {
   padding: 0;
 }
 
-/* Header CSS indtil Menu */
+/* Header */
 header {
   height: 390px;
   width: 100%;
@@ -35,7 +35,7 @@ header {
   margin-top: 20px;
 }
 
-/* Logo - Måske lave shadow? */
+/* Logo */
 #top_logo {
   height: 70px;
   background-image: url(../images/avantgarde_toplogo.gif);
@@ -46,7 +46,7 @@ header {
 	margin-top: -5px;
 }
 
-/* Knap - ændringer? */
+/* Knap */
 #bestil_knap {
   float: right;
   margin-top: -60px;
@@ -85,7 +85,7 @@ header {
   object-fit: cover;
 }
 
-/* Menu - virker links? */
+/* Menu */
 .menu_bar {
   width: 100%;
   height: 50px;
@@ -151,6 +151,35 @@ header {
 	width: 1px;
 }
 
+/* Side controllers */
+.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt {
+	margin: 0 auto;
+	width: 1000px;
+	background-color: #ffffff;
+}
+
+.side_controller {
+	height: 1000px;
+}
+
+.side_controller_bestil {
+	height: 700px;
+}
+
+.side_controller_omos {
+	height: 915px;
+}
+
+.side_controller_kontakt {
+	height: 100%;
+}
+
+.forside_venstre {
+	width: 600px;
+	height: 100%;
+	float: left;
+}
+
 /* Footer */
 footer {
 	width: 100%;
@@ -200,35 +229,9 @@ footer {
 	margin-right: 5px;
 	margin-top: 11px;
 }
-/* Section del - Separate side CSS */
-
-.side_controller, .side_controller_omos, .side_controller_bestil{
-	margin: 0 auto;
-	width: 1000px;
-	background-color: #ffffff;
-}
-
-.side_controller, .side_controller_omos, .side_controller_bestil {
-	height: 1050px;
-}
-
-.side_controller_bestil {
-	height: 700px;
-}
-
-.side_controller_omos {
-	height: 1200px;
-}
-
-.forside_venstre {
-	width: 600px;
-	height: 100%;
-	float: left;
-}
-/* Slut på alle sider */
 
 /* FORSIDE */
-/* Overskriften - font, størrelse? */
+/* Overskriften */
 #overskrift_forside h1 {
 	font: 19px "avenir", sans-serif;
 	font-weight: bold;
@@ -245,9 +248,9 @@ footer {
 	font-style: italic;
 }
 
-/* Billede af salonen udefra - kan fullscreen on click */
+/* Billede af salonen */
 .inden_fullscreen img:hover {
-	border: 1px #262626 solid;
+	border: 1px #000000 solid;
 }
 
 a.inden_fullscreen img {
@@ -256,7 +259,7 @@ a.inden_fullscreen img {
 	height: 300px;;
 	object-fit: cover;
 	display: block;
-	border: 1px #4f4f4f solid;
+	border: 1px #717171 solid;
 }
 
 .efter_fullscreen {
@@ -380,32 +383,36 @@ strong {
 	height: 100%;
 }
 
-/* Åbningstider - justering? */
+/* Åbningstider */
 #aabningstider {
 	padding-top: 75px;
 	display: block;
 	margin: 0 auto;
 }
-/* FORSIDE SLUT */
+
+.facebook_embed {
+	width: 249px;
+	height: 450px;
+	margin: auto;
+	margin-top: 135px;
+}
 
 /* BESTIL TID */
 
-/* BESTIL TID SLUT */
 
 /* GALLERI */
 
-/* GALLERI SLUT */
 
 /* PRODUKTER */
 
-/* PRODUKTER SLUT */
 
 /* OM OS */
+/* Info text */
 .text_omos_venstre {
 	font-family: "avenir", sans-serif;
 	width: 580px;
 	padding-left: 20px;
-	padding-top: 20px;
+	padding-top: 4px;
 	float: left;
 }
 
@@ -419,12 +426,19 @@ strong {
 
 .text_omos_venstre p {
 	font-size: 15px;
+	margin-top: -15px;
 }
 
 #omos_overskrift_2 h1 {
 	margin-top: 50px;
 }
 
+/* HR linje */
+.text_omos_venstre hr {
+	width: 960px;;
+}
+
+/* Billeder af frisører */
 .omos_billeder {
 	float: right;
 	width: 400px;
@@ -433,11 +447,20 @@ strong {
 
 .omos_billeder img {
 	width: 215px;
+	float: right;
+	margin-right: 20px;
 }
 
-/* OM OS SLUT */
+#eli_billede {
+	margin-top: 30px;
+}
+
+#rik_billede {
+	margin-top: 80px;
+}
 
 /* KONTAKT */
+/* Overskrifter */
 .info_kontakt h1, .info_kontakt2 h1 {
 	font: 20px "avenir", sans-serif;
 	padding: 30px 0px 0px 30px;
@@ -445,6 +468,7 @@ strong {
 	font-weight: bold;
 }
 
+/* Info text */
 .info_kontakt p, .info_kontakt2 p {
 	font: 16px "avenir", sans-serif;
 	padding: 5px 0px 40px 30px;
@@ -452,16 +476,13 @@ strong {
 }
 
 .info_kontakt2 {
-	margin-left: 40px;
-	float: left;
+	margin-top: -30px;
 }
 
-.info_kontakt {
-	float: left;
-}
-
+/* Google map */
 #google_map {
-
+	margin: 0;
+	padding: 0;
 }
 
 
