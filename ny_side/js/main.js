@@ -10,5 +10,5 @@ function photoSlider() {
     mySlider++;
     if (mySlider > photos.length) {mySlider = 1;}
     photos[mySlider-1].style.display = "block";
-    setTimeout(photoSlider, 5000);
+    setTimeout(photoSlider, 6000);
 }
