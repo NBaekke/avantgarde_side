@@ -47,6 +47,11 @@ header {
 	margin-top: -5px;
 }
 
+#top_logo2 {
+	display: none;
+	position: absolute;
+}
+
 /* Knap */
 #bestil_knap {
   float: right;
@@ -425,7 +430,7 @@ strong {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 100%;
-  border: 2px #000000 solid;
+  border: 1.5px #000000 solid;
 }
 
 
@@ -507,6 +512,61 @@ strong {
 	padding: 0;
 }
 
-
-/* KONTAKT SLUT */
 /* MOBIL CSS */
+@media screen and (max-width: 720px) {
+	.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri {
+		width: 100%;
+		height: 1000px;
+	}
+
+	.side_controller_galleri {
+		margin-top: -50px;
+	}
+
+	.bottom_controller {
+		display:
+	}
+
+	.top_controller, .top_header {
+		width: 100%;
+		height: 90px;
+		margin: 0 auto;
+	}
+
+	#bestil_knap {
+		display: none;
+	}
+
+	#top_logo {
+		background-image: url(../images/logo_gradient_shadow.png);
+		background-position: center;
+		height: 80px;
+		width: 90%;
+		padding-top: 10px;
+		margin: auto;
+	}
+
+	.facebook_embed {
+		display: none;
+	}
+
+	.gallery, .img-w {
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+
+	.img-w {
+		margin-top: 150px;
+	}
+
+	.img-w img {
+		border-width: 0;
+		object-fit: contain;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
