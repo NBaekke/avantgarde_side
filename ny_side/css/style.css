@@ -168,7 +168,7 @@ header {
 }
 
 .side_controller_galleri {
-	height: 1500px;
+	height: 1250px;
 }
 
 .side_controller_omos {
@@ -409,26 +409,23 @@ strong {
 .gallery {
 	width: 1000px;
   margin: auto;
-  border-radius: 3px;
-  overflow: hidden;
+	height: 100%;
 }
 
 .img-w {
-	width: calc(100% / 3.5);
+	width: calc(100% / 3);
 	margin: auto;
 	float: left;
-	position: relative;
+	margin-top: 100px;
+	height: 300px;
 }
 
 .img-w img {
 	-webkit-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	width: 100%;
-	height: 300px;
-	object-fit: contain;
-	background-position: center;
-	margin-top: 50px;
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 100%;
+  border: 2px #000000 solid;
 }
 
 
@@ -512,3 +509,4 @@ strong {
 
 
 /* KONTAKT SLUT */
+/* MOBIL CSS */
