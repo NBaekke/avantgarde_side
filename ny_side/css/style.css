@@ -151,7 +151,7 @@ header {
 }
 
 /* Side controllers */
-.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri, .side_controller_priser {
+.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri, .side_controller_priser, .side_controller_produkter {
 	margin: 0 auto;
 	width: 1000px;
 	background-color: #ffffff;
@@ -179,6 +179,10 @@ header {
 
 .side_controller_kontakt {
 	height: 100%;
+}
+
+.side_controller_produkter {
+	height: 800px;
 }
 
 .forside_venstre {
@@ -368,7 +372,7 @@ a.efter_close:after {
 	padding: 0 40px;
 	text-align: -webkit-center;
 	font-size: 15px;
-	font-family: "avenir", sans-serif;
+	font-family: "Arial", sans-serif;
 }
 
 strong {
@@ -417,7 +421,7 @@ strong {
 
 .pris_text_venstre p {
 	margin: 0;
-	font: 17px "avenir", sans-serif;
+	font: 17px "Arial", sans-serif;
 }
 
 .span1 {
@@ -459,12 +463,37 @@ strong {
 
 
 /* PRODUKTER */
+.side_controller_produkter2 {
+	width: 100%;
+	padding-top: 40px;
+	margin: auto;
+}
 
+.produkter {
+	margin: auto;
+	width: calc(100% / 3.5);
+	height: 380px;
+	float: left;
+	padding-left: 35px;
+	font: 15px "Arial", sans-serif;
+}
+
+.produkter h1 {
+	font: 19px "avenir", sans-serif;
+	font-weight: bold;
+	color: rgb(38, 38, 38);
+	margin: 0px;
+}
+
+.produkter img {
+	height: 150px;
+	width: 100%;
+	object-fit: contain;
+}
 
 /* OM OS */
 /* Info text */
 .text_omos_venstre {
-	font-family: "avenir", sans-serif;
 	width: 580px;
 	padding-left: 20px;
 	padding-top: 4px;
@@ -472,16 +501,18 @@ strong {
 }
 
 .text_omos_venstre h1 {
-	font-size: 20px;
+	font: 20px "avenir", sans-serif;
+	font-weight: bold;
 }
 
 .text_omos_venstre h2 {
-	font-size: 17px;
+	font: 17px "avenir", sans-serif;
+	font-weight: bold;
 }
 
 .text_omos_venstre p {
-	font-size: 15px;
 	margin-top: -15px;
+	font: 15px "Arial", sans-serif;
 }
 
 /* HR linje */
