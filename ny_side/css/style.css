@@ -55,8 +55,8 @@ header {
 /* Knap */
 #bestil_knap {
   float: right;
-  margin-top: -60px;
-	margin-right: 20px;
+  margin-top: -65px;
+	margin-right: 30px;
   width: 140px;
   background-color: #c88200;
 	box-shadow: 0px 3px 6px #000000;
@@ -65,7 +65,7 @@ header {
 
 #bestil_knap p {
   text-align: center;
-  font: 18px "avenir", sans-serif;
+  font: 19px "avenir", sans-serif;
   color: #ffffff;
 	text-transform: uppercase;
 }
@@ -107,7 +107,7 @@ header {
 .menu_bar ul li {
   list-style: none;
   float: left;
-  width: 16.58%;
+  width: calc(100% / 7.05);
 	height: 100%;
 	padding: 0px;
 }
@@ -158,7 +158,7 @@ header {
 }
 
 /* Side controllers */
-.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri {
+.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri, .side_controller_priser {
 	margin: 0 auto;
 	width: 1000px;
 	background-color: #ffffff;
@@ -170,6 +170,10 @@ header {
 
 .side_controller_bestil {
 	height: 700px;
+}
+
+.side_controller_priser {
+	height: 1100px;
 }
 
 .side_controller_galleri {
@@ -407,6 +411,33 @@ strong {
 	margin-top: 135px;
 }
 
+/* Priser */
+.pris_text_venstre {
+	width: 500px;
+	padding-top: 50px;
+	margin: auto;
+}
+
+.pris_text_venstre span {
+	float: right;
+}
+
+.pris_text_venstre p {
+	margin: 0;
+	font: 17px "avenir", sans-serif;
+}
+
+.span1 {
+	font-size: 11px;
+	text-transform: uppercase;
+	margin-right: 8px;
+	margin-top: 4px;
+}
+
+.span2 {
+	float: left;
+}
+
 /* BESTIL TID */
 
 
@@ -430,7 +461,7 @@ strong {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 100%;
-  border: 1.5px #000000 solid;
+  border: 2px #363636 solid;
 }
 
 
