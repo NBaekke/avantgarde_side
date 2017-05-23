@@ -71,7 +71,7 @@ header {
 
 /* Menu */
 #menu {
-    display:none; /* Hide menu above some resolution */
+    display: none; /* Hide menu above some resolution */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -517,8 +517,9 @@ strong {
 	margin-top: 4px;
 }
 
-.span2 {
+span.span2 {
 	float: left;
+	font-weight: bold;
 }
 
 /* BESTIL TID */
@@ -580,10 +581,9 @@ strong {
 /* OM OS */
 /* Info text */
 .text_omos_venstre {
-	width: 580px;
+	width: 900px;
 	padding-left: 20px;
 	padding-top: 4px;
-	float: left;
 }
 
 .text_omos_venstre h1 {
@@ -607,39 +607,33 @@ strong {
 }
 
 /* Billeder af frisører */
-.omos_billeder {
-	float: right;
-	width: 400px;
-	margin: 0;
-}
-
-.omos_billeder img {
-	width: 215px;
-	float: right;
-	margin-right: 50px;
-}
-
 #eli_billede {
-	margin-top: 30px;
+	float: right;
+	padding-top: 40px;
 }
 
 #rik_billede {
-	margin-top: 105px;
+	float: right;
+	padding-top: 40px;
 }
 
 /* KONTAKT */
 /* Overskrifter */
-.info_kontakt h1, .info_kontakt2 h1 {
+.info_kontakt {
+	padding: 20px 0px 20px 20px;
+}
+
+.info_kontakt h1 {
 	font: 20px "avenir", sans-serif;
-	padding: 30px 0px 0px 30px;
+	padding: 10px 0px 0px 0px;
 	margin: 0;
 	font-weight: bold;
 }
 
 /* Info text */
-.info_kontakt p, .info_kontakt2 p {
+.info_kontakt p {
 	font: 16px "avenir", sans-serif;
-	padding: 5px 0px 40px 30px;
+	padding: 5px 0px 10px 0px;
 	margin: 0;
 }
 
@@ -655,7 +649,7 @@ strong {
 
 /* MOBIL CSS */
 @media screen and (max-width: 720px) {
-	.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri, .side_controller_priser {
+	.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri, .side_controller_priser, .side_controller_produkter {
 		width: 100%;
 	}
 
@@ -668,15 +662,15 @@ strong {
 	}
 
 	.side_controller_priser {
-		height: 1100px;
+		height: 900px;
 	}
 
 	.side_controller_galleri {
-		height: 1240px;
+		height: 3800px;
 	}
 
 	.side_controller_omos {
-		height: 950px;
+		height: 1100px;
 	}
 
 	.side_controller_kontakt {
@@ -684,7 +678,11 @@ strong {
 	}
 
 	.side_controller_produkter {
-		height: 800px;
+		height: 1420px;
+	}
+
+	.side_controller_produkter2 {
+		padding-top: 30px;
 	}
 
 	header {
@@ -777,7 +775,7 @@ strong {
 	}
 
 	#aabningstider {
-		width: 100%;
+		width: 80%;
 		padding: 0px;
 	}
 
@@ -794,4 +792,106 @@ strong {
 		width: 100%
 	}
 
+	/* Priser */
+	.pris_text_venstre {
+		width: 90%;
+		padding-top: 20px;
+		margin: auto;
+	}
+
+	.pris_text_venstre span {
+		float: right;
+	}
+
+	.pris_text_venstre p {
+		font: 15px "Arial", sans-serif;
+	}
+
+	.span1 {
+		display: none;
+	}
+
+	span.span2{
+		float: left;
+	}
+
+	.produkter {
+		margin: 0 auto;
+		width: 95%;
+		height: 340px;
+		float: left;
+		padding-left: 10px;
+		font: 15px "Arial", sans-serif;
+	}
+
+	.produkter h1 {
+		font: 19px "avenir", sans-serif;
+		font-weight: bold;
+		color: rgb(38, 38, 38);
+		margin: 0px;
+	}
+
+	.produkter img {
+		height: 150px;
+		width: 100%;
+		object-fit: contain;
+	}
+
+	.text_omos_venstre {
+		position: absolute;
+		width: 95%;
+		padding-left: 10px;
+		padding-top: 4px;
+		float: left;
+		margin: auto;
+	}
+
+	.text_omos_venstre h1 {
+		font: 20px "avenir", sans-serif;
+		font-weight: bold;
+	}
+
+	.text_omos_venstre h2 {
+		font: 17px "avenir", sans-serif;
+		font-weight: bold;
+	}
+
+	.text_omos_venstre p {
+		margin-top: -15px;
+		font: 15px "Arial", sans-serif;
+	}
+
+	/* HR linje */
+	.text_omos_venstre hr {
+		display: none;
+	}
+
+	/* Billeder af frisører */
+	.omos_billeder {
+		width: 100%;
+		margin: 0;
+	}
+
+	#eli_billede, #rik_billede {
+		padding-top: 0px;
+		padding-right: 20px;
+		float: right;
+		width: 100px;
+	}
+
+	.info_kontakt h1 {
+
+	}
+
+	.info_kontakt p {
+
+	}
+
+	.info_kontakt2 {
+		margin-top: -30px;
+	}
+
+	#google_map {
+		height: 300px;
+	}
 }
