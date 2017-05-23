@@ -7,104 +7,121 @@
   <meta name="description" content="Avantgarde Hairstudio er en frisør i Esbjerg centrum, med fokus på at levere den gode kvalitetsoplevelse, hvor der er afsat tid til en professionel og individuel behandling" />
   <meta name="keywords" content="Frisør, Esbjerg, Frisør i Esbjerg, Avantgarde, Frisørsalon, professionel, hairstudio, online tidsbestilling, tid, erfaring, kvalitet, byens bedste frisør" />
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://use.fontawesome.com/390fe9ab2d.js"></script>
   <title>Avantgarde Hairstudio • 75 45 40 80 • Din professionelle frisør i Esbjerg</title>
 </head>
 <body>
-  <header>
-    <div class="top_header">
-      <div class="top_controller">
-        <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+  <nav id="menu"  role="navigation">
+    <a href="#menu" class="menu-link" id="menu-link-icon"><div id="transparent_layer"></div></a>
+    <ul>
+      <li><a href="index.html">Forside</a></li>
+      <li><a href="priser.html">Priser</a></li>
+      <li><a href="bestiltid.html">Bestil tid</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li><a href="produkter.html">Produkter</a></li>
+      <li><a href="omos.html">Om os</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <div class="top_header">
+        <div class="top_controller">
+          <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bottom_header">
+      <div class="bottom_header">
 
-      <div class="bottom_controller">
-        <div class="billede_slider">
-          <img class="mySlides" src="images/_DSC0275.jpg">
-          <img class="mySlides" src="images/IMG_1561.jpg">
-          <img class="mySlides" src="images/slider_billede.jpg">
+        <div class="bottom_controller">
+          <div class="billede_slider">
+            <img class="mySlides" src="images/_DSC0275.jpg">
+            <img class="mySlides" src="images/IMG_1561.jpg">
+            <img class="mySlides" src="images/slider_billede.jpg">
+          </div>
+          <script src="js/main.js"></script>
+        <div class="menu_bar">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li id="spacer"></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li id="spacer"></li>
+            <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
+            <li id="spacer"></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li id="spacer"></li>
+            <li class="on_site_knap"><a href="produkter.html">Produkter</a></li>
+            <li id="spacer"></li>
+            <li><a href="omos.html">Om os</a></li>
+            <li id="spacer"></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
         </div>
-        <script src="js/main.js"></script>
-      <div class="menu_bar">
-        <ul>
-          <li><a href="index.html">Forside</a></li>
-          <li id="spacer"></li>
-          <li><a href="priser.html">Priser</a></li>
-          <li id="spacer"></li>
-          <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
-          <li id="spacer"></li>
-          <li><a href="galleri.html">Galleri</a></li>
-          <li id="spacer"></li>
-          <li class="on_site_knap"><a href="produkter.html">Produkter</a></li>
-          <li id="spacer"></li>
-          <li><a href="omos.html">Om os</a></li>
-          <li id="spacer"></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+        </div>
       </div>
-      </div>
-    </div>
-  </header>
-  <section>
-    <div class="side_controller_produkter">
-      <div class="side_controller_produkter2">
-        <div class="produkter">
-          <h1>American Crew</h1>
-          <img src="images/produktbillede_crew.jpg" alt="">
-          <div class="beskrivelse">
-            American Crew er det førende mærke indenfor mænds styling og morgen rutine.
-            Det inkluderer et komplet udvalg af shampooer, balsam, styling produkter finishing produkter, barberprodukter, hudpleje produkter krops produkter og dufte.
-            Dette produkt er hovedsagligt for mænd.
+    </header>
+    <section>
+      <div class="side_controller_produkter">
+        <div class="side_controller_produkter2">
+          <div class="produkter">
+            <h1>American Crew</h1>
+            <img src="images/produktbillede_crew.jpg" alt="">
+            <div class="beskrivelse">
+              American Crew er det førende mærke indenfor mænds styling og morgen rutine.
+              Det inkluderer et komplet udvalg af shampooer, balsam, styling produkter finishing produkter, barberprodukter, hudpleje produkter krops produkter og dufte.
+              Dette produkt er hovedsagligt for mænd.
+            </div>
+          </div>
+          <div class="produkter">
+            <h1>GHD</h1>
+            <img src="images/produktbillede_ghd.jpg" alt="">
+            <div class="beskrivelse">
+              Ghd er verdens førende inden for stylingjern, de fåes i tre forskellige størrelser, med eksta lang ledning, der kan dreje i ledet med eksta forstærkning.
+              Slukker automatisk efter ½ time uden at blive brugt, bliver varm og klar til brug på 15 sek. perfekt til forskellige effekter i håret som krøller og svej og kan glatte alt hår super glat og blank.
+            </div>
+          </div>
+          <div class="produkter">
+            <h1>Kérastase</h1>
+            <img src="images/produktbillede_kerastase.jpg" alt="">
+            <div class="beskrivelse">
+              Pleje ritualet tager udgangspunkt i den personlige diagnose ,der baseres på din hovedbund og dit hårs tilstand. Hvad enten det er tørt, fedtet, sensibel med kløe, hårtab, tørre skæl eller fedtet skæl. Så har Kérastase produkt serien til at løse problemet.
+              Dette produkt henvender sig både til mænd og kvinder.
+              Det er naturlig nedbrydelig emballage. Kérastase Loréal har modtaget en miljø pris.
+            </div>
+          </div>
+          <div class="produkter">
+            <h1>Redken</h1>
+            <img src="images/produktbillede_redken.jpg" alt="">
+            <div class="beskrivelse">
+              Redken er et hårpleje system bestående af komplet produkt serie med shampoo, conditioner og treatment, der arbejder med at forbedre hårets struktur indefra og ud.
+              Redkens styling produkt tilfører håret styrke, fleksibilitet for en maksimal bevægelighed.
+              Dette produkt henvender sig både til mænd og kvinder.
+            </div>
           </div>
         </div>
-        <div class="produkter">
-          <h1>GHD</h1>
-          <img src="images/produktbillede_ghd.jpg" alt="">
-          <div class="beskrivelse">
-            Ghd er verdens førende inden for stylingjern, de fåes i tre forskellige størrelser, med eksta lang ledning, der kan dreje i ledet med eksta forstærkning.
-            Slukker automatisk efter ½ time uden at blive brugt, bliver varm og klar til brug på 15 sek. perfekt til forskellige effekter i håret som krøller og svej og kan glatte alt hår super glat og blank.
-          </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_controller">
+        <div class="footer_venstre">
+          <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
         </div>
-        <div class="produkter">
-          <h1>Kérastase</h1>
-          <img src="images/produktbillede_kerastase.jpg" alt="">
-          <div class="beskrivelse">
-            Pleje ritualet tager udgangspunkt i den personlige diagnose ,der baseres på din hovedbund og dit hårs tilstand. Hvad enten det er tørt, fedtet, sensibel med kløe, hårtab, tørre skæl eller fedtet skæl. Så har Kérastase produkt serien til at løse problemet.
-            Dette produkt henvender sig både til mænd og kvinder.
-            Det er naturlig nedbrydelig emballage. Kérastase Loréal har modtaget en miljø pris.
-          </div>
-        </div>
-        <div class="produkter">
-          <h1>Redken</h1>
-          <img src="images/produktbillede_redken.jpg" alt="">
-          <div class="beskrivelse">
-            Redken er et hårpleje system bestående af komplet produkt serie med shampoo, conditioner og treatment, der arbejder med at forbedre hårets struktur indefra og ud.
-            Redkens styling produkt tilfører håret styrke, fleksibilitet for en maksimal bevægelighed.
-            Dette produkt henvender sig både til mænd og kvinder.
-          </div>
+        <div class="footer_hojre">
+          <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
+            <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
+            <p>Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
+            <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+            <p>Instagram</p>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer_controller">
-      <div class="footer_venstre">
-        <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
-      </div>
-      <div class="footer_hojre">
-        <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
-          <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
-          <p>Facebook</p>
-        </a>
-        <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
-          <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
-          <p>Instagram</p>
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

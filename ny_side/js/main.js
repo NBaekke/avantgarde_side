@@ -12,3 +12,16 @@ function photoSlider() {
     photos[mySlider-1].style.display = "block";
     setTimeout(photoSlider, 6000);
 }
+
+$(function(){
+    $('ul li a').on('click', function(){
+        $(this).parent().addClass('current').siblings().removeClass('current');
+        });
+    });
+
+$(function(){
+    $(".menu-link").click(function(){
+    $("#menu").toggleClass("active");
+    $(".container").toggleClass("active");
+            });
+    });

@@ -7,70 +7,87 @@
   <meta name="description" content="Avantgarde Hairstudio er en frisør i Esbjerg centrum, med fokus på at levere den gode kvalitetsoplevelse, hvor der er afsat tid til en professionel og individuel behandling" />
   <meta name="keywords" content="Frisør, Esbjerg, Frisør i Esbjerg, Avantgarde, Frisørsalon, professionel, hairstudio, online tidsbestilling, tid, erfaring, kvalitet, byens bedste frisør" />
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://use.fontawesome.com/390fe9ab2d.js"></script>
   <title>Avantgarde Hairstudio • 75 45 40 80 • Din professionelle frisør i Esbjerg</title>
 </head>
 <body>
-  <header>
-    <div class="top_header">
-      <div class="top_controller">
-        <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+  <nav id="menu"  role="navigation">
+    <a href="#menu" class="menu-link" id="menu-link-icon"><div id="transparent_layer"></div></a>
+    <ul>
+      <li><a href="index.html">Forside</a></li>
+      <li><a href="priser.html">Priser</a></li>
+      <li><a href="bestiltid.html">Bestil tid</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li><a href="produkter.html">Produkter</a></li>
+      <li><a href="omos.html">Om os</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <div class="top_header">
+        <div class="top_controller">
+          <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bottom_header">
+      <div class="bottom_header">
 
-      <div class="bottom_controller">
-        <div class="billede_slider">
-          <img class="mySlides" src="images/_DSC0275.jpg">
-          <img class="mySlides" src="images/IMG_1561.jpg">
-          <img class="mySlides" src="images/slider_billede.jpg">
+        <div class="bottom_controller">
+          <div class="billede_slider">
+            <img class="mySlides" src="images/_DSC0275.jpg">
+            <img class="mySlides" src="images/IMG_1561.jpg">
+            <img class="mySlides" src="images/slider_billede.jpg">
+          </div>
+          <script src="js/main.js"></script>
+        <div class="menu_bar">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li id="spacer"></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li id="spacer"></li>
+            <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
+            <li id="spacer"></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li id="spacer"></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li id="spacer"></li>
+            <li><a href="omos.html">Om os</a></li>
+            <li id="spacer"></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
         </div>
-        <script src="js/main.js"></script>
-      <div class="menu_bar">
-        <ul>
-          <li><a href="index.html">Forside</a></li>
-          <li id="spacer"></li>
-          <li><a href="priser.html">Priser</a></li>
-          <li id="spacer"></li>
-          <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
-          <li id="spacer"></li>
-          <li><a href="galleri.html">Galleri</a></li>
-          <li id="spacer"></li>
-          <li><a href="produkter.html">Produkter</a></li>
-          <li id="spacer"></li>
-          <li><a href="omos.html">Om os</a></li>
-          <li id="spacer"></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+        </div>
       </div>
+    </header>
+    <section>
+      <div class="side_controller_bestil">
+        <div class="text_forside_bestil">
+          <iframe src="http://www.jegvilbestilletid.dk/avantgarde.hairstudio" width="996px" height="700px"></iframe>
+        </div>
       </div>
-    </div>
-  </header>
-  <section>
-    <div class="side_controller_bestil">
-      <div class="text_forside_bestil">
-        <iframe src="http://www.jegvilbestilletid.dk/avantgarde.hairstudio" width="996px" height="700px"></iframe>
+    </section>
+    <footer>
+      <div class="footer_controller">
+        <div class="footer_venstre">
+          <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
+        </div>
+        <div class="footer_hojre">
+          <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
+            <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
+            <p>Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
+            <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+            <p>Instagram</p>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer_controller">
-      <div class="footer_venstre">
-        <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
-      </div>
-      <div class="footer_hojre">
-        <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
-          <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
-          <p>Facebook</p>
-        </a>
-        <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
-          <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
-          <p>Instagram</p>
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

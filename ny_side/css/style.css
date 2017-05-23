@@ -70,10 +70,96 @@ header {
 }
 
 /* Menu */
+#menu {
+    display:none; /* Hide menu above some resolution */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    right: -220px;
+    height: 100%;
+    background-color: rgba(54, 54, 54, 0.75);
+    z-index: 999;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+
+#menu.active {
+    -webkit-transform: translate(-13.755em, 0px);
+    -moz-transform: translate(-13.755em, 0px);
+    -o-transform: translate(-13.755em, 0px);
+    -ms-transform: translate(-13.755em, 0px);
+    transform: translate(-13.755em, 0px);
+}
+
+.menu-link {
+    position: absolute;
+    top: 15px;
+    left: -50px;
+}
+
+.container {
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+
+.container.active { /* transform: translate, transition */
+    -webkit-transform: translate(-13.725em, 0px);
+    -moz-transform: translate(-13.725em, 0px);
+    -o-transform: translate(-13.725em, 0px);
+    -ms-transform: translate(-13.725em, 0px);
+    transform: translate(-13.725em, 0px);
+}
+
+#transparent_layer { height:55px; background-color:transparent; width:65px; position:relative; top:-26px; left: -15px; }
+
+#menu-link-icon, #menu-link-icon:after, #menu-link-icon:before {
+     position:absolute;
+     width:35px;
+     height:5px;
+     background: rgba(54, 54, 54, 0.75);
+     border-radius:20px;
+}
+#menu-link-icon {
+     display:block;
+     text-indent:-999em;
+     top:25px;
+}
+#menu-link-icon:after, #menu-link-icon:before {
+     content:"\00a0";
+     left:0;
+}
+#menu-link-icon:before {
+     top:-10px;
+}
+#menu-link-icon:after {
+     top:10px;
+}
+
+ul {
+    height:100%; padding: 0; margin: 0;
+}
+
+nav#menu { background-color: rgba(54, 54, 54, 0.75); }
+nav#menu ul { padding: 0 ;}
+nav#menu li { text-decoration: none; display: block;  border-bottom: 1px solid #fff; }
+nav#menu li a { display: block; padding: 20px 10px 20px 30px; color: #efefef;
+font: 17px "avenir", sans-serif;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: -0.5px; }
+nav#menu li:hover { background-color:#777;}
+nav#menu li a:hover, #desktop_menu li a:hover { color: rgb(54, 54, 54); }
+nav#menu li a:active, #desktop_menu li a:active { color: rgb(54, 54, 54); }
+
 .menu_bar {
   width: 100%;
   height: 50px;
-  margin-top: -66px;
+  margin-top: -50px;
   position: relative;
   background: rgb(54, 54, 54);
 	background: -webkit-linear-gradient(rgba(54, 54, 54, 0.75), rgb(54, 54, 54));
@@ -396,7 +482,7 @@ strong {
 
 /* Åbningstider */
 #aabningstider {
-	padding-top: 75px;
+	padding-top: 95px;
 	display: block;
 	margin: 0 auto;
 }
@@ -405,7 +491,7 @@ strong {
 	width: 249px;
 	height: 450px;
 	margin: auto;
-	margin-top: 155px;
+	margin-top: 135px;
 }
 
 /* Priser */
@@ -571,15 +657,65 @@ strong {
 @media screen and (max-width: 720px) {
 	.side_controller, .side_controller_omos, .side_controller_bestil, .side_controller_kontakt, .side_controller_galleri, .side_controller_priser {
 		width: 100%;
-		height: 1000px;
+	}
+
+	.side_controller {
+		height: 500px;
+	}
+
+	.side_controller_bestil {
+		height: 700px;
+	}
+
+	.side_controller_priser {
+		height: 1100px;
+	}
+
+	.side_controller_galleri {
+		height: 1240px;
+	}
+
+	.side_controller_omos {
+		height: 950px;
+	}
+
+	.side_controller_kontakt {
+		height: 100%;
+	}
+
+	.side_controller_produkter {
+		height: 800px;
+	}
+
+	header {
+		height: 100%;
+	}
+
+	section {
+		height: 100%;
 	}
 
 	.side_controller_galleri {
 		margin-top: -50px;
 	}
 
+	.bottom_header {
+		display: none;
+	}
+
+	#menu {
+		display: block;
+	}
+
+	.menu_bar {
+		display: none;
+	}
+
+	#menu-link-icon, #menu-link-icon:after, #menu-link-icon:before {
+		background-color: white; }
+
 	.bottom_controller {
-		display:
+		display: none;
 	}
 
 	.top_controller, .top_header {
@@ -594,14 +730,30 @@ strong {
 
 	#top_logo {
 		background-image: url(../images/logo_gradient_shadow.png);
-		background-position: center;
+		background-position: left;
 		height: 80px;
-		width: 90%;
+		width: 75%;
 		padding-top: 10px;
-		margin: auto;
+		margin-left: 10px;
+	}
+
+	.forside_venstre {
+		width: 100%;
+	}
+
+	.forside_hojre {
+		width: 100%;
+	}
+
+	.video_controller {
+		display: none;
 	}
 
 	.facebook_embed {
+		display: none;
+	}
+
+	a.inden_fullscreen img {
 		display: none;
 	}
 
@@ -620,8 +772,26 @@ strong {
 		object-fit: contain;
 	}
 
+	.text_box p {
+		padding: 0 10px;
+	}
+
+	#aabningstider {
+		width: 100%;
+		padding: 0px;
+	}
+
 	img {
 		width: 100%;
 		height: auto;
 	}
+
+	.footer_controller {
+		width: 100%;
+	}
+
+	.footer_venstre, .footer_hojre {
+		width: 100%
+	}
+
 }

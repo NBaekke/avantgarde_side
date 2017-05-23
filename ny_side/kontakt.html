@@ -7,82 +7,99 @@
   <meta name="description" content="Avantgarde Hairstudio er en frisør i Esbjerg centrum, med fokus på at levere den gode kvalitetsoplevelse, hvor der er afsat tid til en professionel og individuel behandling" />
   <meta name="keywords" content="Frisør, Esbjerg, Frisør i Esbjerg, Avantgarde, Frisørsalon, professionel, hairstudio, online tidsbestilling, tid, erfaring, kvalitet, byens bedste frisør" />
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://use.fontawesome.com/390fe9ab2d.js"></script>
   <title>Avantgarde Hairstudio • 75 45 40 80 • Din professionelle frisør i Esbjerg</title>
 </head>
 <body>
-  <header>
-    <div class="top_header">
-      <div class="top_controller">
-        <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+  <nav id="menu"  role="navigation">
+    <a href="#menu" class="menu-link" id="menu-link-icon"><div id="transparent_layer"></div></a>
+    <ul>
+      <li><a href="index.html">Forside</a></li>
+      <li><a href="priser.html">Priser</a></li>
+      <li><a href="bestiltid.html">Bestil tid</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li><a href="produkter.html">Produkter</a></li>
+      <li><a href="omos.html">Om os</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <div class="top_header">
+        <div class="top_controller">
+          <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bottom_header">
+      <div class="bottom_header">
 
-      <div class="bottom_controller">
-        <div class="billede_slider">
-          <img class="mySlides" src="images/_DSC0275.jpg">
-          <img class="mySlides" src="images/IMG_1561.jpg">
-          <img class="mySlides" src="images/slider_billede.jpg">
+        <div class="bottom_controller">
+          <div class="billede_slider">
+            <img class="mySlides" src="images/_DSC0275.jpg">
+            <img class="mySlides" src="images/IMG_1561.jpg">
+            <img class="mySlides" src="images/slider_billede.jpg">
+          </div>
+          <script src="js/main.js"></script>
+        <div class="menu_bar">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li id="spacer"></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li id="spacer"></li>
+            <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
+            <li id="spacer"></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li id="spacer"></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li id="spacer"></li>
+            <li><a href="omos.html">Om os</a></li>
+            <li id="spacer"></li>
+            <li class="on_site_knap"><a href="kontakt.html">Kontakt</a></li>
+          </ul>
         </div>
-        <script src="js/main.js"></script>
-      <div class="menu_bar">
-        <ul>
-          <li><a href="index.html">Forside</a></li>
-          <li id="spacer"></li>
-          <li><a href="priser.html">Priser</a></li>
-          <li id="spacer"></li>
-          <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
-          <li id="spacer"></li>
-          <li><a href="galleri.html">Galleri</a></li>
-          <li id="spacer"></li>
-          <li><a href="produkter.html">Produkter</a></li>
-          <li id="spacer"></li>
-          <li><a href="omos.html">Om os</a></li>
-          <li id="spacer"></li>
-          <li class="on_site_knap"><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+        </div>
       </div>
-      </div>
-    </div>
-  </header>
-  <section>
-    <div class="side_controller_kontakt">
-      <div class="text_forside">
-        <div class="info_kontakt">
-          <h1>Adresse</h1>
-          <p>Peder Skrams Gade 14a<br>6700 Esbjerg</p>
-        </div>
-        <div class="info_kontakt2">
-          <h1>Telefon</h1>
-          <p>75 45 40 80</p>
-        </div>
+    </header>
+    <section>
+      <div class="side_controller_kontakt">
+        <div class="text_forside">
+          <div class="info_kontakt">
+            <h1>Adresse</h1>
+            <p>Peder Skrams Gade 14a<br>6700 Esbjerg</p>
+          </div>
+          <div class="info_kontakt2">
+            <h1>Telefon</h1>
+            <p>75 45 40 80</p>
+          </div>
 
-        <iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.4939432579004!2d8.434795915919617!3d55.471488280478994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b20d3caa35d8b%3A0x6c09da3d67de891a!2sPeder+Skrams+Gade+14A%2C+6700+Esbjerg!5e0!3m2!1sda!2sdk!4v1495008779812
-          &zoom=17
-          &key=AIzaSyCjYKmZjwHdmoBfrnPQ2TZskK08YSqudyM" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen>
-        </iframe>
+          <iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.4939432579004!2d8.434795915919617!3d55.471488280478994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b20d3caa35d8b%3A0x6c09da3d67de891a!2sPeder+Skrams+Gade+14A%2C+6700+Esbjerg!5e0!3m2!1sda!2sdk!4v1495008779812
+            &zoom=17
+            &key=AIzaSyCjYKmZjwHdmoBfrnPQ2TZskK08YSqudyM" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer_controller">
-      <div class="footer_venstre">
-        <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
+    </section>
+    <footer>
+      <div class="footer_controller">
+        <div class="footer_venstre">
+          <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
+        </div>
+        <div class="footer_hojre">
+          <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
+            <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
+            <p>Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
+            <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+            <p>Instagram</p>
+          </a>
+        </div>
       </div>
-      <div class="footer_hojre">
-        <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
-          <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
-          <p>Facebook</p>
-        </a>
-        <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
-          <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
-          <p>Instagram</p>
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

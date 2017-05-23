@@ -7,112 +7,129 @@
   <meta name="description" content="Avantgarde Hairstudio er en frisør i Esbjerg centrum, med fokus på at levere den gode kvalitetsoplevelse, hvor der er afsat tid til en professionel og individuel behandling" />
   <meta name="keywords" content="Frisør, Esbjerg, Frisør i Esbjerg, Avantgarde, Frisørsalon, professionel, hairstudio, online tidsbestilling, tid, erfaring, kvalitet, byens bedste frisør" />
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://use.fontawesome.com/390fe9ab2d.js"></script>
   <title>Avantgarde Hairstudio • 75 45 40 80 • Din professionelle frisør i Esbjerg</title>
 </head>
 <body>
-  <header>
-    <div class="top_header">
-      <div class="top_controller">
-        <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+  <nav id="menu"  role="navigation">
+    <a href="#menu" class="menu-link" id="menu-link-icon"><div id="transparent_layer"></div></a>
+    <ul>
+      <li><a href="index.html">Forside</a></li>
+      <li><a href="priser.html">Priser</a></li>
+      <li><a href="bestiltid.html">Bestil tid</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li><a href="produkter.html">Produkter</a></li>
+      <li><a href="omos.html">Om os</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <div class="top_header">
+        <div class="top_controller">
+          <div id="top_logo" onclick="location.href='index.html';" style="cursor: pointer;">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bottom_header">
-      <div class="bottom_controller">
-      <div class="billede_slider">
-        <img class="mySlides" src="images/_DSC0275.jpg">
-        <img class="mySlides" src="images/IMG_1561.jpg">
-        <img class="mySlides" src="images/slider_billede.jpg">
+      <div class="bottom_header">
+        <div class="bottom_controller">
+        <div class="billede_slider">
+          <img class="mySlides" src="images/_DSC0275.jpg">
+          <img class="mySlides" src="images/IMG_1561.jpg">
+          <img class="mySlides" src="images/slider_billede.jpg">
+        </div>
+          <script src="js/main.js"></script>
+        <div class="menu_bar">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li id="spacer"></li>
+            <li class="on_site_knap"><a href="priser.html">Priser</a></li>
+            <li id="spacer"></li>
+            <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
+            <li id="spacer"></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li id="spacer"></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li id="spacer"></li>
+            <li><a href="omos.html">Om os</a></li>
+            <li id="spacer"></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
       </div>
-        <script src="js/main.js"></script>
-      <div class="menu_bar">
-        <ul>
-          <li><a href="index.html">Forside</a></li>
-          <li id="spacer"></li>
-          <li class="on_site_knap"><a href="priser.html">Priser</a></li>
-          <li id="spacer"></li>
-          <li id="bestil_knap"><a href="bestiltid.html">Bestil tid</a></li>
-          <li id="spacer"></li>
-          <li><a href="galleri.html">Galleri</a></li>
-          <li id="spacer"></li>
-          <li><a href="produkter.html">Produkter</a></li>
-          <li id="spacer"></li>
-          <li><a href="omos.html">Om os</a></li>
-          <li id="spacer"></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+    </header>
+    <section>
+      <div class="side_controller_priser">
+        <div class="pris_text_venstre">
+          <p><strong class="span2">Almindelig klip</strong><br>
+          Dame vask - klip - føn<span>475,-</span><br>
+          Herre vask - klip - føn<span>375,-</span><br>
+          Pandehår<span>75,-</span><br>
+          <br>
+          <strong>Børne klip</strong><br>
+          0-8 år<span>250,-</span><br>
+          9-13 år<span>375,-</span><br>
+          <br><strong class="span2">Vaske</strong><br>
+          Hårvask solo<span>95,-</span><br>
+          Vask-føn<span>290,-</span><br>
+          Kur<span>175,-</span><br>
+          <br><strong class="span2">Voks</strong><br>
+          Voks bryn - Farve og voksbryn<span>95,- | 145,-</span><br>
+          Men's wax<span>175,-</span><br>
+          Voks overlæbe, hage eller kinder<span>100,-</span><br>
+          Voks øre eller næse<span>100,-</span><br>
+          Voks pande<span>105,-</span><br>
+          Bryn og vipper (110 + 140)<span>250,-</span><br>
+          Retning af bryn - blad/pincet<span>30,- | 60,-</span><br>
+          <br>
+          <strong>Følgende priser er alle incl. hårkur</strong><span class="span1">small - medium - large</span><br>
+          Farve kort hår<span>500,- | 555,- | 610,-</span><br>
+          Farve langt hår<span>640,- | 690,- | 740,-</span><br>
+          Farve med refleks - kort hår<span>610,- | 665,- | 720,-</span><br>
+          Farve med refleks - langt hår<span>735,- | 815,- | 910,-</span><br>
+          Farve - refleks XXL<span>Fra 985,- til 1585,-</span><br>
+          Dobbeltfarvning<span>Fra 785,- til 1185,-</span><br>
+          <br><strong class="span2">Ekstra</strong><span class="span1">small - medium - large</span><br>
+          Refleks i pakker - kort hår<span>505,- | 580,- | 650,-</span><br>
+          Refleks i pakker - langt hår<span>685,- | 785,- | 910,-</span><br>
+          Aftrækning af farve<span>195,- | 395,- | 595,-</span><br>
+          Forpigmentering<span>270,- | 345,- | 445,-</span><br>
+          Kamstrejf (ex. hårkur)<span>320,- | 370,- | 405,-</span><br>
+          <br>
+          <strong>Følgende priser er alle incl. hårkur</strong><span class="span1">small - medium - large</span><br>
+          Permanent - kort hår<span>610,- | 665,- | 720,-</span><br>
+          Permanent - langt hår<span>775,- | 875,- | 975,-</span><br>
+          Special perm./spiral<span>1725,-</span><br>
+          Udtræk af krøl<span>Fra 525,- til 845,-</span><br>
+          <br><strong class="span2">Opsætning</strong><br>
+          Opsætning langt hår<span>Fra 500,- til 800,-</span><br>
+          Lille opsætning<span>Fra 300,-</span><br>
+          Brude opsætning + makeup<span>1500,-</span><br>
+          Make-up<span>400,-</span>
+          </p>
+        </div>
       </div>
-    </div>
-  </header>
-  <section>
-    <div class="side_controller_priser">
-      <div class="pris_text_venstre">
-        <p><strong class="span2">Almindelig klip</strong><br>
-        Dame vask - klip - føn<span>475,-</span><br>
-        Herre vask - klip - føn<span>375,-</span><br>
-        Pandehår<span>75,-</span><br>
-        <br>
-        <strong>Børne klip</strong><br>
-        0-8 år<span>250,-</span><br>
-        9-13 år<span>375,-</span><br>
-        <br><strong class="span2">Vaske</strong><br>
-        Hårvask solo<span>95,-</span><br>
-        Vask-føn<span>290,-</span><br>
-        Kur<span>175,-</span><br>
-        <br><strong class="span2">Voks</strong><br>
-        Voks bryn - Farve og voksbryn<span>95,- | 145,-</span><br>
-        Men's wax<span>175,-</span><br>
-        Voks overlæbe, hage eller kinder<span>100,-</span><br>
-        Voks øre eller næse<span>100,-</span><br>
-        Voks pande<span>105,-</span><br>
-        Bryn og vipper (110 + 140)<span>250,-</span><br>
-        Retning af bryn - blad/pincet<span>30,- | 60,-</span><br>
-        <br>
-        <strong>Følgende priser er alle incl. hårkur</strong><span class="span1">small - medium - large</span><br>
-        Farve kort hår<span>500,- | 555,- | 610,-</span><br>
-        Farve langt hår<span>640,- | 690,- | 740,-</span><br>
-        Farve med refleks - kort hår<span>610,- | 665,- | 720,-</span><br>
-        Farve med refleks - langt hår<span>735,- | 815,- | 910,-</span><br>
-        Farve - refleks XXL<span>Fra 985,- til 1585,-</span><br>
-        Dobbeltfarvning<span>Fra 785,- til 1185,-</span><br>
-        <br><strong class="span2">Ekstra</strong><span class="span1">small - medium - large</span><br>
-        Refleks i pakker - kort hår<span>505,- | 580,- | 650,-</span><br>
-        Refleks i pakker - langt hår<span>685,- | 785,- | 910,-</span><br>
-        Aftrækning af farve<span>195,- | 395,- | 595,-</span><br>
-        Forpigmentering<span>270,- | 345,- | 445,-</span><br>
-        Kamstrejf (ex. hårkur)<span>320,- | 370,- | 405,-</span><br>
-        <br>
-        <strong>Følgende priser er alle incl. hårkur</strong><span class="span1">small - medium - large</span><br>
-        Permanent - kort hår<span>610,- | 665,- | 720,-</span><br>
-        Permanent - langt hår<span>775,- | 875,- | 975,-</span><br>
-        Special perm./spiral<span>1725,-</span><br>
-        Udtræk af krøl<span>Fra 525,- til 845,-</span><br>
-        <br><strong class="span2">Opsætning</strong><br>
-        Opsætning langt hår<span>Fra 500,- til 800,-</span><br>
-        Lille opsætning<span>Fra 300,-</span><br>
-        Brude opsætning + makeup<span>1500,-</span><br>
-        Make-up<span>400,-</span>
-        </p>
+    </section>
+    <footer>
+      <div class="footer_controller">
+        <div class="footer_venstre">
+          <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
+        </div>
+        <div class="footer_hojre">
+          <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
+            <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
+            <p>Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
+            <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+            <p>Instagram</p>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer_controller">
-      <div class="footer_venstre">
-        <p id="footer_text">Avantgarde Hair Studio <span>-</span> Peder Skrams Gade 14a <span>-</span> 6700 Esbjerg <span>-</span> 75 45 40 80</p>
-      </div>
-      <div class="footer_hojre">
-        <a href="https://www.facebook.com/AVANTGARDE-272260116152667/?fref=ts" target="_blank">
-          <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
-          <p>Facebook</p>
-        </a>
-        <a href="https://www.instagram.com/avantgardehairstudio/" target="_blank">
-          <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
-          <p>Instagram</p>
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
