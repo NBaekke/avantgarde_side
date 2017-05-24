@@ -195,7 +195,7 @@ nav#menu li a:active, #desktop_menu li a:active { color: rgb(54, 54, 54); }
 
 .menu_bar ul a {
 	color: #efefef;
-	font: 17px "avenir", sans-serif;
+	font: 15px "avenir", sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: -0.5px;
@@ -486,7 +486,7 @@ strong {
 
 /* Åbningstider */
 #aabningstider {
-	padding-top: 95px;
+	padding-top: 98px;
 	display: block;
 	margin: 0 auto;
 }
@@ -495,7 +495,7 @@ strong {
 	width: 249px;
 	height: 450px;
 	margin: auto;
-	margin-top: 135px;
+	margin-top: 132px;
 }
 
 /* Priser */
