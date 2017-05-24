@@ -322,9 +322,13 @@ footer {
 	margin-top: 13px;
 }
 
-.footer_hojre i {
+#desktop_icon {
 	margin-right: 5px;
 	margin-top: 11px;
+}
+
+#mobil_icon {
+	display: none;
 }
 
 /* FORSIDE */
@@ -654,7 +658,7 @@ span.span2 {
 	}
 
 	.side_controller {
-		height: 500px;
+		height: 450px;
 	}
 
 	.side_controller_bestil {
@@ -735,12 +739,38 @@ span.span2 {
 		margin-left: 10px;
 	}
 
+	.footer_controller p, #desktop_icon {
+		display: none;
+	}
+
+	.icons_controller {
+		position: relative;
+		width: 50%;
+		float: left;
+		padding: 15px 0px;
+	}
+
+	.icons_controller a {
+		text-decoration: none;
+	}
+
+	#mobil_icon {
+		display: flex;
+		color: #ffffff;
+		margin: auto;
+		width: 100%;
+		justify-content: center;
+	}
+
 	.forside_venstre {
 		width: 100%;
 	}
 
 	.forside_hojre {
 		width: 100%;
+		height: auto;
+		background-color: white;
+		padding-bottom: 20px;
 	}
 
 	.video_controller {
@@ -786,10 +816,13 @@ span.span2 {
 
 	.footer_controller {
 		width: 100%;
+		position: relative;
+		margin: auto;
 	}
 
 	.footer_venstre, .footer_hojre {
-		width: 100%
+		width: 100%;
+		display: none;
 	}
 
 	/* Priser */
