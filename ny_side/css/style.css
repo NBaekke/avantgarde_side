@@ -252,7 +252,7 @@ nav#menu li a:active, #desktop_menu li a:active { color: rgb(54, 54, 54); }
 }
 
 .side_controller_priser {
-	height: 1100px;
+	height: 1000px;
 }
 
 .side_controller_galleri {
@@ -334,7 +334,7 @@ footer {
 /* FORSIDE */
 /* Overskriften */
 #overskrift_forside h1 {
-	font: 19px "avenir", sans-serif;
+	font: 20px "avenir", sans-serif;
 	font-weight: bold;
 	color: rgb(38, 38, 38);
 	margin: 0px;
@@ -511,7 +511,7 @@ strong {
 
 .pris_text_venstre p {
 	margin: 0;
-	font: 17px "Arial", sans-serif;
+	font: 15px "Arial", sans-serif;
 }
 
 .span1 {
@@ -570,7 +570,7 @@ span.span2 {
 }
 
 .produkter h1 {
-	font: 19px "avenir", sans-serif;
+	font: 18px "avenir", sans-serif;
 	font-weight: bold;
 	color: rgb(38, 38, 38);
 	margin: 0px;
@@ -591,12 +591,12 @@ span.span2 {
 }
 
 .text_omos_venstre h1 {
-	font: 20px "avenir", sans-serif;
+	font: 18px "avenir", sans-serif;
 	font-weight: bold;
 }
 
 .text_omos_venstre h2 {
-	font: 17px "avenir", sans-serif;
+	font: 16px "avenir", sans-serif;
 	font-weight: bold;
 }
 
@@ -628,7 +628,7 @@ span.span2 {
 }
 
 .info_kontakt h1 {
-	font: 20px "avenir", sans-serif;
+	font: 18px "avenir", sans-serif;
 	padding: 10px 0px 0px 0px;
 	margin: 0;
 	font-weight: bold;
@@ -636,7 +636,7 @@ span.span2 {
 
 /* Info text */
 .info_kontakt p {
-	font: 16px "avenir", sans-serif;
+	font: 15px "avenir", sans-serif;
 	padding: 5px 0px 10px 0px;
 	margin: 0;
 }
