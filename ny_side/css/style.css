@@ -144,17 +144,37 @@ ul {
     height:100%; padding: 0; margin: 0;
 }
 
-nav#menu { background-color: rgba(54, 54, 54, 0.75); }
-nav#menu ul { padding: 0 ;}
-nav#menu li { text-decoration: none; display: block;  border-bottom: 1px solid #fff; }
-nav#menu li a { display: block; padding: 20px 10px 20px 30px; color: #efefef;
-font: 17px "avenir", sans-serif;
-text-decoration: none;
-text-transform: uppercase;
-letter-spacing: -0.5px; }
-nav#menu li:hover { background-color:#777;}
-nav#menu li a:hover, #desktop_menu li a:hover { color: rgb(54, 54, 54); }
-nav#menu li a:active, #desktop_menu li a:active { color: rgb(54, 54, 54); }
+nav#menu {
+	background-color: rgba(54, 54, 54, 0.75);
+}
+
+nav#menu ul {
+	padding: 0;
+}
+
+nav#menu li {
+	text-decoration: none; display: block;  border-bottom: 1px solid #fff;
+}
+
+nav#menu li a {
+	display: block; padding: 20px 10px 20px 30px; color: #efefef;
+	font: 17px "avenir", sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: -0.5px;
+}
+
+nav#menu li:hover {
+	background-color:#777;
+}
+
+nav#menu li a:hover, #desktop_menu li a:hover {
+	olor: rgb(54, 54, 54);
+}
+
+nav#menu li a:active, #desktop_menu li a:active {
+	color: rgb(54, 54, 54);
+}
 
 .menu_bar {
   width: 100%;
@@ -194,7 +214,7 @@ nav#menu li a:active, #desktop_menu li a:active { color: rgb(54, 54, 54); }
 }
 
 .menu_bar ul a {
-	color: #efefef;
+	color: #ffffff;
 	font: 15px "avenir", sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -256,7 +276,7 @@ nav#menu li a:active, #desktop_menu li a:active { color: rgb(54, 54, 54); }
 }
 
 .side_controller_galleri {
-	height: 1240px;
+	height: 1450px;
 }
 
 .side_controller_omos {
@@ -331,7 +351,6 @@ footer {
 #desktop_icon {
 	margin-right: 5px;
 	margin-top: 6px;
-
 }
 
 #mobil_icon {
@@ -720,7 +739,7 @@ span.span2 {
 	}
 
 	#menu-link-icon, #menu-link-icon:after, #menu-link-icon:before {
-		background-color: white; }
+		background-color: #ffffff; }
 
 	.bottom_controller {
 		display: none;
@@ -775,7 +794,7 @@ span.span2 {
 	.forside_hojre {
 		width: 100%;
 		height: auto;
-		background-color: white;
+		background-color: #ffffff;
 		padding-bottom: 20px;
 	}
 
