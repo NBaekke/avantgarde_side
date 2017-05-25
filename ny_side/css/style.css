@@ -280,7 +280,7 @@ nav#menu li a:active, #desktop_menu li a:active { color: rgb(54, 54, 54); }
 /* Footer */
 footer {
 	width: 100%;
-	height: 40px;
+	height: 48px;
 	position: relative;
 	left: 0;
 	bottom: 0;
@@ -292,17 +292,24 @@ footer {
 	margin: 0 auto;
 }
 
-.footer_venstre, .footer_hojre {
-	width: 500px;
-	height: 40px;
+.footer_venstre {
+	width: 600px;
+	height: 48px;
+	float: left;
+}
+
+.footer_hojre {
+	width: 400px;
+	height: 48px;
 	float: left;
 }
 
 .footer_venstre p {
   float: left;
 	margin-left: 5px;
+	margin-top: 12px;
 	padding: 0px;
-	font: 13px "avenir", sans-serif;
+	font: 16px "avenir", sans-serif;
 	color: #efefef;
 }
 
@@ -317,14 +324,14 @@ footer {
 }
 
 .footer_hojre p {
-	font: 13px "avenir", sans-serif;
-	margin-right: 5px;
-	margin-top: 13px;
+	font: 16px "avenir", sans-serif;
+	margin: 12px 5px 0px 10px;
 }
 
 #desktop_icon {
 	margin-right: 5px;
-	margin-top: 11px;
+	margin-top: 6px;
+
 }
 
 #mobil_icon {
@@ -540,15 +547,14 @@ span.span2 {
 	width: calc(100% / 3);
 	margin: auto;
 	float: left;
-	margin-top: 100px;
-	height: 300px;
+	margin-top: 80px;
 }
 
 .img-w img {
-	-webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  width: 100%;
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+	height: 100%;
   border: 2px #363636 solid;
 }
 
