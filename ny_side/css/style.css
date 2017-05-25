@@ -71,77 +71,87 @@ header {
 
 /* Menu */
 #menu {
-    display: none; /* Hide menu above some resolution */
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 220px;
-    right: -220px;
-    height: 100%;
-    background-color: rgba(54, 54, 54, 0.75);
-    z-index: 999;
-    -webkit-transition: 0.15s ease;
-    -moz-transition: 0.15s ease;
-    -o-transition: 0.15s ease;
-    transition: 0.15s ease;
+  display: none; /* Hide menu above some resolution */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 220px;
+  right: -220px;
+  height: 100%;
+  background-color: rgba(54, 54, 54, 0.75);
+  z-index: 999;
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: 0.15s ease;
 }
 
 #menu.active {
-    -webkit-transform: translate(-13.755em, 0px);
-    -moz-transform: translate(-13.755em, 0px);
-    -o-transform: translate(-13.755em, 0px);
-    -ms-transform: translate(-13.755em, 0px);
-    transform: translate(-13.755em, 0px);
+  -webkit-transform: translate(-13.755em, 0px);
+  -moz-transform: translate(-13.755em, 0px);
+  -o-transform: translate(-13.755em, 0px);
+  -ms-transform: translate(-13.755em, 0px);
+  transform: translate(-13.755em, 0px);
 }
 
 .menu-link {
-    position: absolute;
-    top: 15px;
-    left: -50px;
+  position: absolute;
+  top: 15px;
+  left: -50px;
 }
 
 .container {
-    -webkit-transition: 0.15s ease;
-    -moz-transition: 0.15s ease;
-    -o-transition: 0.15s ease;
-    transition: 0.15s ease;
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+	-ms-transform: 0.15s ease;
+  transition: 0.15s ease;
 }
 
 .container.active { /* transform: translate, transition */
-    -webkit-transform: translate(-13.725em, 0px);
-    -moz-transform: translate(-13.725em, 0px);
-    -o-transform: translate(-13.725em, 0px);
-    -ms-transform: translate(-13.725em, 0px);
-    transform: translate(-13.725em, 0px);
+  -webkit-transform: translate(-13.725em, 0px);
+  -moz-transform: translate(-13.725em, 0px);
+  -o-transform: translate(-13.725em, 0px);
+  -ms-transform: translate(-13.725em, 0px);
+  transform: translate(-13.725em, 0px);
 }
 
-#transparent_layer { height:55px; background-color:transparent; width:65px; position:relative; top:-26px; left: -15px; }
+#transparent_layer {
+	height:55px;
+	background-color: transparent;
+	width:65px;
+	position:relative;
+	top:-26px;
+	left: -15px;
+}
 
 #menu-link-icon, #menu-link-icon:after, #menu-link-icon:before {
-     position:absolute;
-     width:35px;
-     height:5px;
-     background: rgba(54, 54, 54, 0.75);
-     border-radius:20px;
+  position:absolute;
+  width:35px;
+  height:5px;
+  background: rgba(54, 54, 54, 0.75);
+  border-radius:20px;
 }
 #menu-link-icon {
-     display:block;
-     text-indent:-999em;
-     top:25px;
+  display:block;
+  text-indent:-999em;
+  top:25px;
 }
 #menu-link-icon:after, #menu-link-icon:before {
-     content:"\00a0";
-     left:0;
+  content:"\00a0";
+  left:0;
 }
 #menu-link-icon:before {
-     top:-10px;
+  top:-10px;
 }
 #menu-link-icon:after {
-     top:10px;
+  top:10px;
 }
 
 ul {
-    height:100%; padding: 0; margin: 0;
+	height:100%;
+	padding: 0;
+	margin: 0;
 }
 
 nav#menu {
@@ -157,7 +167,9 @@ nav#menu li {
 }
 
 nav#menu li a {
-	display: block; padding: 20px 10px 20px 30px; color: #efefef;
+	display: block;
+	padding: 20px 10px 20px 30px;
+	color: #efefef;
 	font: 17px "avenir", sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -214,7 +226,7 @@ nav#menu li a:active, #desktop_menu li a:active {
 }
 
 .menu_bar ul a {
-	color: #ffffff;
+	color: rgb(255, 255, 255);
 	font: 15px "avenir", sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -238,7 +250,7 @@ nav#menu li a:active, #desktop_menu li a:active {
 }
 
 .menu_bar li:hover {
-	background-color: #242424;
+	background-color: rgb(36, 36, 36);
 }
 
 .on_site_knap {
@@ -695,7 +707,7 @@ span.span2 {
 	}
 
 	.side_controller_galleri {
-		height: 3450px;
+		height: 3950px;
 	}
 
 	.side_controller_omos {
@@ -787,6 +799,17 @@ span.span2 {
 		justify-content: center;
 	}
 
+	.footer_controller {
+		width: 100%;
+		position: relative;
+		margin: auto;
+	}
+
+	.footer_venstre, .footer_hojre {
+		width: 100%;
+		display: none;
+	}
+
 	.forside_venstre {
 		width: 100%;
 	}
@@ -814,10 +837,11 @@ span.span2 {
 		width: 100%;
 		height: auto;
 		float: left;
+		margin-top: 50px;
 	}
 
 	.img-w {
-		margin-top: 150px;
+		margin-top: 50px;
 	}
 
 	.img-w img {
@@ -839,17 +863,6 @@ span.span2 {
 		height: auto;
 	}
 
-	.footer_controller {
-		width: 100%;
-		position: relative;
-		margin: auto;
-	}
-
-	.footer_venstre, .footer_hojre {
-		width: 100%;
-		display: none;
-	}
-
 	/* Priser */
 	.pris_text_venstre {
 		width: 90%;
@@ -869,7 +882,7 @@ span.span2 {
 		display: none;
 	}
 
-	span.span2{
+	span.span2 {
 		float: left;
 	}
 
