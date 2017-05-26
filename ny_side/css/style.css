@@ -648,14 +648,9 @@ span.span2 {
 }
 
 /* Billeder af frisører */
-#eli_billede {
+#eli_billede, #rik_billede {
 	float: right;
-	padding-top: 40px;
-}
-
-#rik_billede {
-	float: right;
-	padding-top: 40px;
+	margin-top: -20px;
 }
 
 /* KONTAKT */
@@ -950,6 +945,7 @@ span.span2 {
 		width: 120px;
 		margin-bottom: 10px;
 		margin-left: 10px;
+		margin-top: 0;
 	}
 
 	.info_kontakt h1 {
