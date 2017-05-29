@@ -356,7 +356,7 @@ footer {
 }
 
 .footer_hojre p {
-	font: 16px "avenir", sans-serif;
+	font: 16px "Arial", sans-serif;
 	margin: 12px 5px 0px 10px;
 }
 
@@ -374,7 +374,6 @@ footer {
 #overskrift_forside h1 {
 	font: 20px "avenir", sans-serif;
 	font-weight: bold;
-	color: rgb(38, 38, 38);
 	margin: 0px;
 	padding: 40px 0px 0px 0px;
 	text-align: center;
@@ -609,7 +608,6 @@ span.span2 {
 .produkter h1 {
 	font: 18px "avenir", sans-serif;
 	font-weight: bold;
-	color: rgb(38, 38, 38);
 	margin: 0px;
 }
 
@@ -633,7 +631,7 @@ span.span2 {
 }
 
 .text_omos_venstre h2 {
-	font: 16px "avenir", sans-serif;
+	font: 15px "Arial", sans-serif;
 	font-weight: bold;
 }
 
@@ -668,7 +666,7 @@ span.span2 {
 
 /* Info text */
 .info_kontakt p {
-	font: 15px "avenir", sans-serif;
+	font: 15px "Arial", sans-serif;
 	padding: 5px 0px 10px 0px;
 	margin: 0;
 }
@@ -870,7 +868,7 @@ span.span2 {
 	}
 
 	.pris_text_venstre p {
-		font: 14px "Arial", sans-serif;
+		font: 15px "Arial", sans-serif;
 	}
 
 	.span1 {
@@ -891,9 +889,6 @@ span.span2 {
 	}
 
 	.produkter h1 {
-		font: 19px "avenir", sans-serif;
-		font-weight: bold;
-		color: rgb(38, 38, 38);
 		margin: 0px;
 	}
 
@@ -918,7 +913,7 @@ span.span2 {
 	}
 
 	.text_omos_venstre h2 {
-		font: 17px "avenir", sans-serif;
+		font: 15px "Arial", sans-serif;
 		font-weight: bold;
 	}
 
@@ -946,14 +941,6 @@ span.span2 {
 		margin-bottom: 10px;
 		margin-left: 10px;
 		margin-top: 0;
-	}
-
-	.info_kontakt h1 {
-
-	}
-
-	.info_kontakt p {
-
 	}
 
 	.info_kontakt2 {
